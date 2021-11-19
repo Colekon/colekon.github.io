@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cole Kon</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</head>
+
+<body onmousemove="moveBackground(event)">
+    <section id="landing-page">
+
+        <nav>
+            <figure>
+                <img id="personal-logo" src="./assets/logo.svg" alt="">
+            </figure>
+            <ul class="nav__link--list">
+                <li class="nav__link">
+                    <a href="#portfolio" class="
+            nav__link--anchor
+            link__hover-effect
+            link__hover-effect--black
+            ">Music</a>
+                </li>
+                <li class="nav__link">
+                    <a href="https://www.instagram.com/colekon/" class="
+            nav__link--anchor
+            link__hover-effect
+            link__hover-effect--black
+            ">Instagram</a>
+                </li>
+                <li class="nav__link" onclick="toggleModal()">
+                    <a href="#" class="
+            nav__link--anchor
+            link__hover-effect
+            link__hover-effect--black
+            ">Contact</a>
+                </li>
+                <!-- <li class="nav__link click">
+                    <a href="#" class="
+            nav__link--anchor
+            link__hover-effect
+            link__hover-effect--black
+            "><i class="fas fa-adjust"></i></a>
+                </li> -->
+            </ul>
+        </nav>
+        <header class="header">
+            <div class="header__content">
+                <h1 class="title">— nice to meet you,</h1>
+                <h1 class="title color-description">Cole Kon</h1>
+                <p class="header__para">music, modeling and <b class="color-description">much more...</b>
+                    listen to my stuff on all
+                    <br>
+                    <b class="color-description">music steaming platforms</b>.
+                </p>
+                <div class="social__list">
+                    <a href="https://www.instagram.com/colekon/" target="_blank" class="social__link click"><i
+                            class="fab fa-instagram"></i></a>
+                    <a href="https://music.apple.com/us/artist/cole-kon/1550729096" target="_blank"
+                        class="social__link click"><i class="fas fa-headphones-alt"></i></a>
+                </div>
+            </div>
+            <div class="header__photo">
+                <img class="header__photo-front" src="/assets/front.PNG" alt="">
+            </div>
+        </header>
+        <button class="mail__btn click" onclick="toggleModal()">
+            <i class="far fa-envelope"></i>
+        </button>
+        <!-- <a href="#portfolio" class="scroll bounce"><i class="fas fa-sort-down"></i>
+        </a> -->
+        <div class="modal">
+            <div class="modal__half modal__about">
+                <p class="modal__para">Please, contact me and I'll reply as soon as possible :)</p>
+            </div>
+            <div class="modal__half modal__contact">
+                <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
+                <form onsubmit="contact(event)" class="contact__form">
+                    <div class="form__item">
+                        <label class="form__item--label">Name</label>
+                        <input class="input" name="user_name" type="text"></input>
+                    </div>
+                    <div class="form__item">
+                        <label class="form__item--label">Email</label>
+                        <input class="input" name="user_email" type="email"></input>
+                    </div>
+                    <div class="form__item">
+                        <label class="form__item--label">Message</label>
+                        <textarea class="input" name="message" type="text"></textarea>
+                    </div>
+                    <button id="contact__submit" class="form__submit">
+                        Send
+                    </button>
+                </form>
+                <div class="modal__overlay modal__overlay--loading">
+                    <i class="fas fa-spinner"></i>
+                </div>
+                <div class="modal__overlay modal__overlay--success">
+                    Thank you, message received.
+                </div>
+            </div>
+
+        </div>
+        <img src="assets/note3.svg" class="shape shape--0">
+        <img src="assets/note1.svg" class="shape shape--1">
+        <img src="assets/note4.svg" class="shape shape--2">
+        <img src="assets/note2.svg" class="shape shape--3">
+        <img src="assets/note1.svg" class="shape shape--5">
+        <img src="assets/note0.svg" class="shape shape--7">
+        <img src="assets/note2.svg" class="shape shape--8">
+    </section>
+    <section id="portfolio" class="projects">
+        <div class="container">
+            <div class="row">
+                <h1 class="section__title">
+                    Here's some of my <span class="color-description">music</span>
+                </h1>
+                <ul class="project__list">
+                    <li class="project">
+                        <div class="project__wrapper">
+                            <a href="https://music.apple.com/us/album/moon-isnt-beautiful-anymore-single/1567443875"
+                                class="
+                            nav__link--anchor
+                            link__hover-effect--black">
+                                <figure class="img__wrapper">
+                                    <img src="/assets/music2.jpeg" class="project__img 
+                                project__img--photo0-border" alt="">
+                                    <div class="project__description-0 project__description">
+                                        <h3 class="project__description--title">
+                                            Moon Isn't Beautiful Anymore
+                                        </h3>
+                                        <div class="project__description--links">
+                                            <a href="" class="project__description--link"></a>
+                                        </div>
+                            </a>
+
+                        </div>
+                        </figure>
+                        <a href="https://music.apple.com/us/album/dark-glory-vol-1-ep/1582845207" class="
+                            nav__link--anchor
+                            link__hover-effect--black">
+                            <figure class="img__wrapper">
+                                <img src="/assets/music1.jpeg" class="project__img" alt="">
+                                <div class="project__description-1 project__description">
+                                    <h3 class="project__description--title">
+                                        DARK GLORY, Vol. 1 - EP
+                                    </h3>
+                                    <div class="project__description--links">
+                                        <a href="" class="project__description--link"></a>
+                                    </div>
+                        </a>
+
+            </div>
+            </figure>
+            <a href="https://music.apple.com/us/album/executioner-single/1581079883" class="
+            nav__link--anchor
+            link__hover-effect--black">
+                <figure class="img__wrapper">
+                    <img src="/assets/music3.png" class="project__img" alt="">
+                    <div class="project__description-2 project__description">
+                        <h3 class="project__description--title">
+                            Executioner
+                        </h3>
+                        <div class="project__description--links">
+                            <a href="" class="project__description--link"></a>
+                        </div>
+            </a>
+        </div>
+        </figure>
+        <a href="https://music.apple.com/us/artist/cole-kon/1550729096/see-all?section=top-songs" class="
+            nav__link--anchor
+            link__hover-effect--black">
+            <figure class="img__wrapper">
+                <img src="/assets/tophits.PNG" class="project__img" alt="">
+                <div class="project__description-3 project__description">
+                    <h3 class="project__description--title">
+                        Top Songs
+                    </h3>
+                    <div class="project__description--links">
+                        <a href="" class="project__description--link"></a>
+                    </div>
+        </a>
+        </div>
+        </figure>
+        </div>
+        </li>
+        </ul>
+        </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row footer__row">
+                <figure>
+                    <img class="footer__logo--img" src="/assets/logo.svg" alt="">
+                </figure>
+                <div class="footer__social--list">
+                    <a href="https://music.apple.com/us/artist/cole-kon/1550729096" target="_blank" class="
+                    footer__social--link 
+                link__hover-effect
+                link__hover-effect--white">
+                        Apple music
+                    </a>
+                    <a href="https://www.instagram.com/colekon/" target="_blank" class="
+                    footer__social--link 
+                link__hover-effect
+                link__hover-effect--white">
+                        Instagram</a>
+                    <a href="#" onclick="toggleModal()" class="
+                    footer__social--link 
+                link__hover-effect
+                link__hover-effect--white">
+                        Email
+                    </a>
+                </div>
+                <div class="footer__copyright">Copyright © 2021 Alyssa Donchu</div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
