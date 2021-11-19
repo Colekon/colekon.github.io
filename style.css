@@ -1,3 +1,9 @@
+/* 
+
+   ------------------------------- GENERAL -------------------------------
+
+*/
+
 * {
   margin: 0;
   padding: 0;
@@ -212,6 +218,7 @@ button {
   bottom: 32px;
   right: 40px;
 }
+
 /* 
 .scroll {
   position: absolute;
@@ -301,7 +308,7 @@ nav {
   display: flex;
   visibility: hidden;
   z-index: -1;
-  transition: visibility 1s, z-index 1s, box-shadow 0.5s ease;
+  transition: visibility 1s, z-index 300ms, box-shadow 0.5s ease;
 }
 
 .modal--open .modal {

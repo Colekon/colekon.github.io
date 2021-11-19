@@ -12,6 +12,12 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
     <script src="index.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_ew2b5AYyNH8FSnXLgF629");
+        })();
+    </script>
 </head>
 
 <body onmousemove="moveBackground(event)">
@@ -85,16 +91,16 @@
                 <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
                 <form onsubmit="contact(event)" class="contact__form">
                     <div class="form__item">
-                        <label class="form__item--label">Name</label>
-                        <input class="input" name="user_name" type="text"></input>
+                        <label class="form__item--label">Name*</label>
+                        <input class="input" name="user_name" type="text" required></input>
                     </div>
                     <div class="form__item">
-                        <label class="form__item--label">Email</label>
-                        <input class="input" name="user_email" type="email"></input>
+                        <label class="form__item--label">Email*</label>
+                        <input class="input" name="user_email" type="email" required></input>
                     </div>
                     <div class="form__item">
-                        <label class="form__item--label">Message</label>
-                        <textarea class="input" name="message" type="text"></textarea>
+                        <label class="form__item--label">Message*</label>
+                        <textarea class="input" name="message" type="text" required></textarea>
                     </div>
                     <button id="contact__submit" class="form__submit">
                         Send
