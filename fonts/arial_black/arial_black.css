@@ -1,0 +1,9 @@
+@font-face {
+	font-family: 'Arial Black';
+	src: url('../fonts/arial_black.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/arial_black.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/arial_black.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/arial_black.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/arial_black.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/arial_black.svg#arial_black') format('svg'); /* Chrome < 4, Legacy iOS */
+}
